@@ -1,5 +1,5 @@
 /* =========================================================
-   Anderssons VVS — Editorial Precision stylesheet
+   J Andersson VVS Service AB — Editorial Precision stylesheet
    Design family: Trade Showcase (Editorial Precision variant)
    ========================================================= */
 
@@ -305,6 +305,27 @@ p.lede {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--ink);
+  position: relative;
+  padding-block: 5px;
+}
+
+/* Red line above, blue line below — logo accent */
+.brand::before,
+.brand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 1px;
+}
+.brand::before {
+  top: 0;
+  background: #c0392b;
+}
+.brand::after {
+  bottom: 0;
+  background: #2471a3;
 }
 
 .brand strong {
