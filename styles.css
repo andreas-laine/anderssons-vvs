@@ -1880,3 +1880,18 @@ body.is-menu-open .site-header--on-light {
   body { padding: 0; background: white; color: black; }
   .hero { min-height: auto; background: white; color: black; }
 }
+
+@media (max-width: 640px) {
+  .hero__inner {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  .hero__title {
+    max-width: 100%;
+  }
+
+  .hero__lede {
+    max-width: 100%;
+  }
+}
